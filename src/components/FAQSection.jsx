@@ -19,11 +19,6 @@ const FAQSection = () => {
 
             <div class="questions-mobile">
 
-                <button class="q q-top">
-                    <span>Is any of my personal information stored in the App?</span>
-                    <img src={blueArrow} alt="arrow icon"/>
-                </button> 
-
                 <div class="q q-top">
                     <button>Is any of my personal information
                         stored in the App?</button>
@@ -115,7 +110,7 @@ const FAQSection = () => {
                     <div class="flex">
                         <button>Can I schedule future transfers?</button>
                         <button>
-                            <img src={greyArrow} alt="arrow icon"/>
+                            <img src={blueArrow} alt="arrow icon"/>
                         </button>
                     </div>
                     <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
