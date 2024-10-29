@@ -1,0 +1,41 @@
+:root {
+    --clr-gray-100: #F3F6FF;
+    --clr-gray-200: #EFF2FC;
+    --clr-gray-300: #E2E5F1;
+    --clr-gray-400: #D4D7E5;
+    --clr-gray-500: #B4B7C9;
+    --clr-gray-600: #9397AD;
+    --clr-gray-700: #565973;
+    --clr-gray-800: #33354D;
+    --clr-gray-900: #0B0F19;
+    --clr-primary: #6366F1;
+    --clr-gradient: linear-gradient(left, #6366F1, #8B5CF6, #D946EF );
+    --clr-error: #EF4444;
+    --clr-success: #22C55E;
+    --clr-warning: #FFBA08;
+    --clr-info: #4C82F7;
+
+    --clr-bg-feedback-card:#fff;
+    --clr-bg-FAQ-q: #fff;
+    --clr-bg-download: #0B0F19;
+}
+
+html {
+    color-scheme: light;
+}
+
+.dark {
+    color-scheme: dark;
+    --clr-gray-100: hsl(0, 0%, 12%);
+    --clr-gray-200: #EFF2FC;
+    --clr-gray-300: #E2E5F1;
+    --clr-gray-400: #D4D7E5;
+    --clr-gray-500: #B4B7C9;
+    --clr-gray-600: #6366F1;
+    --clr-gray-700: #fff;
+    --clr-gray-800: #fff;
+    --clr-gray-900: #fff;
+    --clr-bg-feedback-card:hsl(0, 0%, 16%);
+    --clr-bg-FAQ-q: hsl(0, 0%, 12%);
+    --clr-bg-download: #F3F6FF;
+}

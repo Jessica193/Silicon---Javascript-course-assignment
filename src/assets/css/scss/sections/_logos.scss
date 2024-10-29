@@ -1,0 +1,49 @@
+.logos-section {
+    display: none;  
+}
+
+.logos-cards {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.logos-card {
+    border: 1px solid var(--clr-gray-300);
+    border-radius: 0.5em;
+    padding: 1em;
+    display: grid;
+    place-items: center;
+    flex: 1;
+    width: 100%;
+
+
+    img {
+        width: 100%;
+    }
+}
+
+
+@media (width >= 768px) {
+    .logos-section {
+        display: block;
+    }
+
+    .logos-card-4 {
+        display: none;
+    }
+    .logos-card-5 {
+        display: none;
+    }
+}
+
+
+@media (width >= 1400px) {
+    .logos-card-4 {
+        display: block;
+    }
+
+    .logos-card-5 {
+        display: block;
+    }
+}

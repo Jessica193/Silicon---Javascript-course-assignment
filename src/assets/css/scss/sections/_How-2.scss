@@ -1,0 +1,86 @@
+.how-2-section {
+    display: none;
+}
+
+.container-how-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+
+    h3 {
+        font-size: 32px;
+        color: var(--clr-gray-900);
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        max-width: 80%;
+    }
+}
+
+.money-transfer {
+    display: flex;
+    flex-direction: column;
+
+
+    .btn-money-transfer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        gap: 1rem;
+          
+    }
+}
+
+.how-2-list {
+    margin-bottom: 2rem;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    li {
+        list-style: none;
+        color: var(--clr-gray-800);
+        font-size: 16px;
+    }
+}
+
+.receive-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.receive-payment-cards {
+    display: flex;
+    gap: 2rem;
+
+    margin-bottom: 3rem;
+
+    .grey-box {
+        margin-bottom: 2rem;
+    }
+}
+
+.btn-money-transfer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (width >= 768px) {
+    .how-2-section {
+        display: none;
+    }
+}
+
+
+@media (width >= 1400px) {
+    .how-2-section {
+        display: block;
+        }
+}

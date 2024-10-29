@@ -1,0 +1,9 @@
+.grey-box {
+    height: 60px;
+    width: 60px;
+    border-radius: .5em;
+    border: none;
+    background-color: var(--clr-gray-100);
+    display: grid;
+    place-items: center;
+}

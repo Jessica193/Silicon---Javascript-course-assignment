@@ -1,0 +1,17 @@
+@mixin h1 {
+    font-size: 34.1px;
+    font-weight: 800;
+    line-height: 44.1px;
+    font-family: manrope;
+    font-style: normal;
+
+    @media (width >= 768px) {
+        font-size: 44.3px;
+        line-height: 57.6px;
+    }
+
+    @media (width >= 1400px) {
+        font-size: 56px;
+        line-height: 130%;
+    }
+}
