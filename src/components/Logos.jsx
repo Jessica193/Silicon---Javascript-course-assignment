@@ -11,6 +11,7 @@ const Logos = () => {
     <section className="logos-section section">
         <div className="logos-container container">
             <div className="logos-cards">
+
                 <div className="logos-card">
                     <img src={Logos1} alt="impsum logotype"/>
                 </div>
@@ -23,7 +24,7 @@ const Logos = () => {
                     <img src={Logos3} alt="impsum logotype"/>
                 </div>
 
-                <div className="logos-card logos-card-3">
+                <div className="logos-card">
                     <img src={Logos4} alt="impsum logotype"/>
                 </div>
 
@@ -34,6 +35,7 @@ const Logos = () => {
                 <div className="logos-card logos-card-5">
                     <img src={Logos6} alt="impsum logotype"/>
                 </div>
+
             </div>    
 
         </div>
@@ -42,3 +44,6 @@ const Logos = () => {
 }
 
 export default Logos
+
+
+

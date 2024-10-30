@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid';
 import Mobile2 from '../assets/images/mobile-image-2.svg'
-import Features1 from '../assets/images/features-1.svg'
-import Features4 from '../assets/images/features-4.svg'
-import Features2 from '../assets/images/features-2.svg'
-import Features5 from '../assets/images/features-5.svg'
-import Features3 from '../assets/images/features-3.svg'
-import Features6 from '../assets/images/features-6.svg'
+import FeaturesItem from './FeaturesItem'
+
+
+
 
 const Features = () => {
+
+    const [FeaturesItems, setFeaturesItems] = useState([
+        {id: uuidv4(), title: "Easy Payments", imageURL: "./images/features/features-1.svg", imageAlt: "credit card", text: "Id mollis consectetur congue egestas egestas suspendisse blandit justo."},
+        {id: uuidv4(), title: "Data Security", imageURL: "./images/features/features-4.svg", imageAlt: "shield", text: "Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non."},
+        {id: uuidv4(), title: "Cost Statistics", imageURL: "./images/features/features-2.svg", imageAlt: "grafic bars", text: "Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh."},
+        {id: uuidv4(), title: "Support 24/7", imageURL: "./images/features/features-5.svg", imageAlt: "communication", text: "A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris."},
+        {id: uuidv4(), title: "Regular Cashback", imageURL: "./images/features/features-3.svg", imageAlt: "wallet", text: "Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend."},
+        {id: uuidv4(), title: "Top Standards", imageURL: "./images/features/features-6.svg", imageAlt: "smiley", text: "Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu."}
+    ])
+
+
   return (
     <section className="app-features-section section">
         <div className="container container-app-features">
@@ -26,65 +36,12 @@ const Features = () => {
                     
                 <div className="app-features-cards">
 
-                    <div className="app-features-card">
-                        <div className="grey-box grey-box-1">
-                            <img src={Features1} alt="credit card"/>
-                        </div>
-                        <div className="app-features-card-content">
-                            <h6>Easy Payments</h6>
-                            <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
-                        </div>
-                    </div>
-                    
-                    <div className="app-features-card">
-                        <div className="grey-box">
-                            <img src={Features4} alt="shield"/>
-                        </div>
-                        <div className="app-features-card-content">
-                            <h6>Data Security</h6>
-                            <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
-                        </div>
-                    </div>
-                    
-                    <div className="app-features-card">
-                        <div className="grey-box">
-                            <img src={Features2} alt="grafic bars"/>
-                        </div>
-                        <div className="app-features-card-content">
-                            <h6>Cost Statistics</h6>
-                            <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
-                        </div>
-                    </div>
+                    {
+                        FeaturesItems.length > 0 && FeaturesItems.map( (item) => {
 
-                    <div className="app-features-card">
-                        <div className="grey-box">
-                            <img src={Features5} alt="communication"/>
-                        </div>
-                        <div className="app-features-card-content">
-                            <h6>Support 24/7</h6>
-                            <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
-                        </div>
-                    </div>
-
-                    <div className="app-features-card">
-                        <div className="grey-box">
-                            <img src={Features3} alt="wallet"/>
-                        </div>
-                        <div className="app-features-card-content">
-                            <h6>Regular Cashback</h6>
-                            <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
-                        </div>
-                    </div>
-
-                    <div className="app-features-card">
-                        <div className="grey-box">
-                            <img src={Features6} alt="smiley"/>
-                        </div>
-                        <div className="app-features-card-content">
-                            <h6>Top Standards</h6>
-                            <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
-                        </div>
-                    </div>
+                           return <FeaturesItem item={item} key={uuidv4()} />
+                        })
+                    }
 
                 </div>
             </div>

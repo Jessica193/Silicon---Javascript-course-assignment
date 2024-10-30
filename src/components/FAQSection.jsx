@@ -8,18 +8,18 @@ import greenArrow from '../assets/images/green-arrow.svg'
 
 const FAQSection = () => {
   return (
-    <section class="FAQ-section">
-        <div class="container container-FAQ">
+    <section className="FAQ-section">
+        <div className="container container-FAQ">
 
-            <div class="FAQ-info">
-                <h3 class="FAQ-info-h3">Any questions? Check out the FAQs</h3>
-                <p class="FAQ-info-p">Still have unanswered questions and need
+            <div className="FAQ-info">
+                <h3 className="FAQ-info-h3">Any questions? Check out the FAQs</h3>
+                <p className="FAQ-info-p">Still have unanswered questions and need
                 to get in touch?</p>
             </div>
 
-            <div class="questions-mobile">
+            <div className="questions-mobile">
 
-                <div class="q q-top">
+                <div className="q q-top">
                     <button>Is any of my personal information
                         stored in the App?</button>
                     <button>
@@ -27,7 +27,7 @@ const FAQSection = () => {
                     </button>
                 </div>
                 
-                <div class="q q-text">
+                <div className="q q-text">
                     <p>Nunc duis id aenean gravida tincidunt eu, tempor
                         ullamcorper. Viverra aliquam arcu, viverra et,
                         cursus. Aliquet pretium cursus adipiscing gravida
@@ -45,7 +45,7 @@ const FAQSection = () => {
                         Dignissim amet adipiscing massa integer.</p>
                 </div>
 
-                <div class="q">
+                <div className="q">
                     <button>What formats can I download my
                         transaction history in?</button>
                     <button>
@@ -53,14 +53,14 @@ const FAQSection = () => {
                     </button>
                 </div>
 
-                <div class="q">
+                <div className="q">
                     <button>Can I schedule future transfers?</button>
                     <button>
                         <img src={greyArrow} alt="arrow icon"/>
                     </button>
                 </div>
 
-                <div class="q">
+                <div className="q">
                     <button>When can I use Banking App
                         services?</button>
                     <button>
@@ -68,7 +68,7 @@ const FAQSection = () => {
                     </button>
                 </div>
 
-                <div class="q">
+                <div className="q">
                     <button>Can I create my own password that is
                         easy for me to remember?</button>
                     <button>
@@ -76,7 +76,7 @@ const FAQSection = () => {
                     </button>
                 </div>
 
-                <div class="q q-bottom">
+                <div className="q q-bottom">
                     <button>What happens if I forget or lose my
                         password?</button>
                     <button>
@@ -86,11 +86,11 @@ const FAQSection = () => {
                 
             </div>
 
-            <a class="btn-primary FAQ-btn" href="#">Contact us now</a>
+            <a className="btn-primary FAQ-btn" href="#">Contact us now</a>
 
-            <div class="questions-tablet">
+            <div className="questions-tablet">
 
-                <div class="q-t">
+                <div className="q-t">
                     <button>Is any of my personal information
                         stored in the App?</button>
                     <button>
@@ -98,7 +98,7 @@ const FAQSection = () => {
                     </button>
                 </div>
 
-                <div class="q-t">
+                <div className="q-t">
                     <button>What formats can I download my
                         transaction history in?</button>
                     <button>
@@ -106,8 +106,8 @@ const FAQSection = () => {
                     </button>
                 </div>
 
-                <div class="q-t q-t-text" >
-                    <div class="flex">
+                <div className="q-t q-t-text" >
+                    <div className="flex">
                         <button>Can I schedule future transfers?</button>
                         <button>
                             <img src={blueArrow} alt="arrow icon"/>
@@ -116,7 +116,7 @@ const FAQSection = () => {
                     <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
                 </div>
 
-                <div class="q-t">
+                <div className="q-t">
                     <button>When can I use Banking App
                         services?</button>
                     <button>
@@ -124,7 +124,7 @@ const FAQSection = () => {
                     </button>
                 </div>
 
-                <div class="q-t">
+                <div className="q-t">
                     <button>Can I create my own password that is
                         easy for me to remember?</button>
                     <button>
@@ -132,7 +132,7 @@ const FAQSection = () => {
                     </button>
                 </div>
 
-                <div class="q-t">
+                <div className="q-t">
                     <button>What happens if I forget or lose my
                         password?</button>
                     <button>
@@ -142,9 +142,9 @@ const FAQSection = () => {
 
             </div>
 
-            <div class="FAQ-cards">
+            <div className="FAQ-cards">
 
-                <div class="FAQ-card FAQ-card-1">
+                <div className="FAQ-card FAQ-card-1">
                     <img src={phone} alt="telephone"/>
                     <p>Still have  questions?</p>
                     <a href="#">
@@ -153,7 +153,7 @@ const FAQSection = () => {
                     </a>
                 </div>
 
-                <div class="FAQ-card FAQ-card-2">
+                <div className="FAQ-card FAQ-card-2">
                     <img src={messageBubble} alt="text-message icon"/>
                     <p>Don't like phone calls?</p>
                     <a href="#">
