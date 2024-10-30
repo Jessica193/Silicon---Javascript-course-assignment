@@ -251,9 +251,6 @@ a:hover {
   justify-content: space-between;
   background-color: var(--clr-bg-FAQ-q);
 }
-.questions-mobile button {
-  color: var(--clr-gray-900);
-}
 .questions-mobile .q-top {
   border-top: 1px solid #E2E5F1;
   border-radius: 0.5em 0.5em 0 0;
@@ -278,9 +275,6 @@ a:hover {
   gap: 2rem;
   margin-bottom: 2rem;
   display: none;
-}
-.questions-tablet button {
-  color: var(--clr-gray-900);
 }
 .questions-tablet .q-t {
   border: none;

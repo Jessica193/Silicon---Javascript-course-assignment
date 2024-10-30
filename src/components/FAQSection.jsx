@@ -17,130 +17,106 @@ const FAQSection = () => {
                 to get in touch?</p>
             </div>
 
-            <div className="questions-mobile">
+            <div className="accordion">
 
-                <div className="q q-top">
-                    <button>Is any of my personal information
-                        stored in the App?</button>
-                    <button>
-                        <img src={blueArrow} alt="arrow icon"/>
-                    </button>
-                </div>
-                
-                <div className="q q-text">
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor
-                        ullamcorper. Viverra aliquam arcu, viverra et,
-                        cursus. Aliquet pretium cursus adipiscing gravida
-                        et consequat lobortis arcu velit. Nibh pharetra
-                        fermentum duis accumsan lectus non. Massa
-                        cursus molestie lorem scelerisque pellentesque.
-                        Nisi, enim, arcu purus gravida adipiscing euismod
-                        montes, duis egestas. Vehicula eu etiam quam
-                        tristique tincidunt suspendisse ut consequat.</p>
-                    <p>Ornare senectus fusce dignissim ut. Integer
-                        consequat in eu tortor, faucibus et lacinia
-                        posuere. Turpis sit viverra lorem suspendisse
-                        lacus aliquam auctor vulputate. Quis egestas
-                        aliquam nunc purus lacus, elit leo elit facilisi.
-                        Dignissim amet adipiscing massa integer.</p>
+                <div className='accordion-item'>
+                    <div className="question">
+                        <p>Is any of my personal information
+                            stored in the App?
+                        </p>
+                        <button >
+                            <img src={greyArrow} alt="arrow icon"/>
+                        </button>
+                    </div>
+                    <div className='answer'>
+                        <div className="expandable">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam, aut asperiores voluptate id obcaecati et ipsa delectus temporibus ad!
+                        </div>
+                    </div>
                 </div>
 
-                <div className="q">
-                    <button>What formats can I download my
-                        transaction history in?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
+                <div className='accordion-item'>
+                    <div className="question">
+                        <p>What formats can I download my
+                        transaction history in?
+                        </p>
+                        <button>
+                            <img src={greyArrow} alt="arrow icon"/>
+                        </button>
+                    </div>
+                    <div className='answer'>
+                        <div className="expandable">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam, aut asperiores voluptate id obcaecati et ipsa delectus temporibus ad!
+                        </div>
+                    </div>
                 </div>
 
-                <div className="q">
-                    <button>Can I schedule future transfers?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
+                <div className='accordion-item'>
+                    <div className="question">
+                        <p>Can I schedule future transfers?
+                        </p>
+                        <button>
+                            <img src={greyArrow} alt="arrow icon"/>
+                        </button>
+                    </div>
+                    <div className='answer'>
+                        <div className="expandable">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam, aut asperiores voluptate id obcaecati et ipsa delectus temporibus ad!
+                        </div>
+                    </div>
                 </div>
 
-                <div className="q">
-                    <button>When can I use Banking App
-                        services?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
+                <div className='accordion-item'>
+                    <div className="question">
+                        <p>When can I use Banking App
+                        services?
+                        </p>
+                        <button>
+                            <img src={greyArrow} alt="arrow icon"/>
+                        </button>
+                    </div>
+                    <div className='answer'>
+                        <div className="expandable">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam, aut asperiores voluptate id obcaecati et ipsa delectus temporibus ad!
+                        </div>
+                    </div>
                 </div>
 
-                <div className="q">
-                    <button>Can I create my own password that is
-                        easy for me to remember?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
+                <div className='accordion-item'>
+                    <div className="question">
+                        <p>Can I create my own password that is
+                        easy for me to remember?
+                        </p>
+                        <button>
+                            <img src={greyArrow} alt="arrow icon"/>
+                        </button>
+                    </div>
+                    <div className='answer'>
+                        <div className="expandable">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam, aut asperiores voluptate id obcaecati et ipsa delectus temporibus ad!
+                        </div>
+                    </div>
                 </div>
 
-                <div className="q q-bottom">
-                    <button>What happens if I forget or lose my
-                        password?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
+                <div className='accordion-item'>
+                    <div className="question">
+                        <p>What happens if I forget or lose my
+                        password?
+                        </p>
+                        <button>
+                            <img src={greyArrow} alt="arrow icon"/>
+                        </button>
+                    </div>
+                    <div className='answer'>
+                        <div className="expandable">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam, aut asperiores voluptate id obcaecati et ipsa delectus temporibus ad!
+                        </div>
+                    </div>
                 </div>
-                
+
             </div>
 
             <a className="btn-primary FAQ-btn" href="#">Contact us now</a>
-
-            <div className="questions-tablet">
-
-                <div className="q-t">
-                    <button>Is any of my personal information
-                        stored in the App?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
-                </div>
-
-                <div className="q-t">
-                    <button>What formats can I download my
-                        transaction history in?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
-                </div>
-
-                <div className="q-t q-t-text" >
-                    <div className="flex">
-                        <button>Can I schedule future transfers?</button>
-                        <button>
-                            <img src={blueArrow} alt="arrow icon"/>
-                        </button>
-                    </div>
-                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-                </div>
-
-                <div className="q-t">
-                    <button>When can I use Banking App
-                        services?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
-                </div>
-
-                <div className="q-t">
-                    <button>Can I create my own password that is
-                        easy for me to remember?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
-                </div>
-
-                <div className="q-t">
-                    <button>What happens if I forget or lose my
-                        password?</button>
-                    <button>
-                        <img src={greyArrow} alt="arrow icon"/>
-                    </button>
-                </div>
-
-            </div>
 
             <div className="FAQ-cards">
 
