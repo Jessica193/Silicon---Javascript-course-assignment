@@ -6,20 +6,39 @@ import fourStars from '../assets/images/four-stars.svg'
 import avatar2 from '../assets/images/avatar-2.svg'
 import FeedbackCard from './FeedbackCard'
 
+
 const FeedbackSection = () => {
 
 const [feedbackCards, setFeedbackCards] = useState([])
 
 const getData = async () => {
-    const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
-    const data = await res.json()
 
-    setFeedbackCards(data)
+    try {
+        const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
+        if(!res.ok) {
+            console.error('data could not be fetched')
+        }
+        const data = await res.json()
+
+        setFeedbackCards(data)
+    } catch (error) {
+        console.error(error.message)
+    }
+
 }
 
 useEffect(() => {
+
  getData()
+
 }, [])
+
+// const renderStars = (rating) => {
+//     return Array.from({ length:rating }, (_, index) => (
+//         <img key={index} src="public\images\feedback\yellow-star.svg" alt="" className='star-icon'/>
+//     ))
+// }
+//     // renderStars-funktionen kommer från Jeanette i vår klass
 
 
   return (
@@ -31,32 +50,10 @@ useEffect(() => {
 
                 {
                     feedbackCards.map( (item) => {
-                        return <FeedbackCard key={item.id} item={item} />
+                        return <FeedbackCard key={item.id} item={item}  />
                     })
 
                 }
-
-            {/* <div className="feedback-card">
-                <img className="quote" src="public\images\feedback\quotes.svg" alt="quotation marks"/>
-                <img className="stars" src={fourStars} alt="four star rating"/>
-                <p className="review">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
-                <div className="sender">
-                    <img className="avatar" src={avatar1} alt="girl avatar"/>
-                    <p className="name">Fannie Summers</p>
-                    <p className="profession">Designer</p>
-                </div>
-            </div>
-
-            <div className="feedback-card">
-                <img className="quote" src="public\images\feedback\quotes.svg" alt="quotation marks"/>
-                <img className="stars" src={fiveStars} alt="five star rating"/>
-                <p className="review">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
-                <div className="sender">
-                    <img className="avatar" src={avatar2} alt="boy avatar"/>
-                    <p className="name">Albert Flores</p>
-                    <p className="profession">Developer</p>
-                </div>
-            </div> */}
         </div>
     </section>
   )

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 const AccordionItem = ({item}) => {
 
     const [IsOpen, setIsOpen] = useState(false)
@@ -16,7 +17,7 @@ const AccordionItem = ({item}) => {
               <p>{item.title}
               </p>
               <button >
-                  v{/* <img src='public\images\Accordion\grey-arrow-down.svg' alt="arrow icon"/> */}
+              <i className="fa-solid fa-chevron-down"></i>
               </button>
           </div>
           <div className='answer'>
