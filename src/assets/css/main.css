@@ -263,6 +263,11 @@ a:hover {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  min-width: 35px;
+  aspect-ratio: 1;
+  background-color: var(--clr-gray-300);
+  border-radius: 50%;
+  
 }
 .accordion-item .answer {
   color: var(--clr-gray-800);
@@ -277,6 +282,9 @@ a:hover {
 .open .answer {
   grid-template-rows: 1fr;
   padding: 1rem;
+}
+.open .accordion-item button {
+
 }
 .expandable {
   min-height: 0px;
