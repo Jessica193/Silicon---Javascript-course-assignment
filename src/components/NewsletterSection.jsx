@@ -11,11 +11,11 @@ function NewsletterSection() {
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if(email.trim() === '') {
-      console.log('You can not leave this field empty') /*Ändra senare*/
+      alert('You can not leave this field empty') /*Ändra senare*/
         return
       } 
       else if (!regexEmail.test(email)) {
-        console.log('You have to enter a valid email-address') /*Ändra senare*/
+        alert('You have to enter a valid email-address') /*Ändra senare*/
       }
 
       setEmail('')
