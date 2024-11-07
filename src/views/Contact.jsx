@@ -8,62 +8,69 @@ const Contact = () => {
   return (
     <>
     <section className='contact-section'>
-        <div className="container">
+        <div className="container contact-container">
 
-            <h2>Contact Us</h2>
+            <h2 className='contact-us'>Contact Us</h2>
 
             <div className="contact-alternatives">
 
                 <div className="contact-card">
-                    <div className="contact-card--image">
+                    <div className="contact-card-image">
                         <img src="public\images\contact\envelope.svg" alt="" />
                     </div>
                     <div className="contact-card-content">
                         <h5>Email us</h5>
                         <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
-                        <a href='#'>
-                        <p>Leave a message</p>
-                        <img src={arrowRight} alt="arrow icon"/>
-                        </a>
+                        <a href='#' className="contact-link">
+                            <p>Leave a message</p>
+                            <img src={arrowRight} alt="arrow icon" />
+                        </a> 
                     </div>
                 </div>
                 
                 <div className="contact-card">
-                    <div className="contact-card--image">
+                    <div className="contact-card-image">
                         <img src="public\images\contact\add-group.svg" alt="" />
                     </div>
                     <div className="contact-card-content">
                         <h5>Careers</h5>
                         <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
-                        <a href='#'>
-                        <p>Send an application</p>
-                        <img src={arrowRight} alt="arrow icon" />
+                        <a href='#' className="contact-link">
+                            <p>Send an application</p>
+                            <img src={arrowRight} alt="arrow icon" />
                         </a>
+                        
+                        
                     </div>
                 </div>
 
-                <form className='contact-section-form'>
-                     <div>
+            </div>
+
+            <form className='contact-section-form'>
+                    <h3>Get Online Consultation</h3>
+
+                    <div>
                         <label htmlFor="fullName">Full name</label>
-                        <input type="text" name="fullName" id="fullName" />
-                     </div>
-                     <div>
+                        <input className='contact-input' type="text" name="fullName" id="fullName" />
+                    </div>
+
+                    <div>
                         <label htmlFor="email">Email address</label>
-                        <input type="email" name="email" id="email" />
-                     </div>
-                     <div>
+                        <input className='contact-input' type="email" name="email" id="email" />
+                    </div>
+
+                    <div>
                         <label htmlFor="specialist">Specialist</label>
-                        <select name="specialist" id="specialist" >
-                            <option value="" disabled selected>Pick a specialist...</option>
+                        <select className='contact-input' name="specialist" id="specialist" >
+                            <option value="" defaultChecked></option>
                             <option value="Physical therapist">Physical therapist</option>
                             <option value="General practitioner">General practitioner</option>
                             <option value="Psychiatrist">Psychiatrist</option>
                         </select>   
-                     </div>
-                     <button className='btn-primary'>Make an appointment</button>
-                </form>
+                    </div>
 
-            </div>
+                    <button className='btn-primary'>Make an appointment</button>
+            </form>
         </div>
     </section>
 
@@ -71,6 +78,17 @@ const Contact = () => {
 
     <section className='address-section'>
         <div className="container">
+
+            <div>
+                <img src="public\images\contact\map.svg" alt="" />
+            </div>
+
+            <div className="adresses">
+
+                <div className="adress">
+                    <h5>Medical Center 1</h5>
+                </div>
+            </div>
 
         </div>
     </section>
