@@ -4,6 +4,7 @@ import siliconLogoDark from '../assets/images/siliconLogoDarkmode.svg'
 import iconSignIn from '../assets/images/icon-sign-in.svg'
 import mobileMenu from '../assets/images/mobile-menu.svg'
 import DarkmodeSwitch from './DarkmodeSwitch'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -11,10 +12,10 @@ const Header = () => {
         <div className="container header-container"> 
 
             
-            <a id="logo" href="index.html">
+            <Link id="logo" to="/">
                 <img className="silicon-logo-lightmode" src={siliconLogoLight} alt="silicon logotype" />
                 <img className="silicon-logo-darkmode" src={siliconLogoDark} alt="silicon logotype"/>
-            </a>
+            </Link>
 
             <nav  id="main-menu"  className="navbar">
                 <a className="nav-link" href="#">Features</a>

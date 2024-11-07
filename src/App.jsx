@@ -1,15 +1,10 @@
-import './App.css'
 import './assets/css/main.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './views/Home'
+import Contact from './views/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import HeroSection from './components/HeroSection'
-import Logos from './components/Logos'
-import Features from './components/Features'
-import HowSection from './components/HowSection'
-import How2Section from './components/How2Section'
-import FeedbackSection from './components/FeedbackSection'
-import FAQSection from './components/FAQSection'
-import NewsletterSection from './components/NewsletterSection'
+
 
 
 
@@ -17,21 +12,18 @@ function App() {
   
 
   return (
-    <>
-      <Header/>
+    <BrowserRouter>
+      <Header />
       <main>
-        <HeroSection/>
-        <Logos/>
-        <Features/>
-        <HowSection/>
-        <How2Section/>
-        <FeedbackSection/>
-        <FAQSection/>
-        <NewsletterSection/>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 
 export default App
+
