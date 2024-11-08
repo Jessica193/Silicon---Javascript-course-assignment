@@ -1218,4 +1218,65 @@ footer p {
   }
 }
 
+
+
+/* ADDRESS-SECTION */
+
+.address-container {
+  display: grid;
+  place-items: center;
+}
+.map {
+  display: none;
+}
+
+.medical-centers {
+  .medical-center {
+    margin-bottom: 3rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  h5 {
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .medical-center-contacts {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+.social-media-icon {
+  min-width: 40px;
+  min-height: 40px;
+  background-color: var(--clr-gray-100);
+  display: grid;
+  place-items: center;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+@media (width >= 768px) {
+  .map {
+    display: block;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (width >= 1400px) {
+  .address-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .medical-centers {
+    h5 {
+      font-size: 24px;
+    }
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
