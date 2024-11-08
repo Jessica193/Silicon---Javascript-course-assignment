@@ -1,15 +1,19 @@
 import React from 'react'
 import arrowRight from '../assets/images/arrow-right.svg'
+import { Link } from 'react-router-dom'
+import Breadcrumb from '../components/Breadcrumb'
+
 
 const Contact = () => {
-
+   
 
 
   return (
     <>
     <section className='contact-section'>
+        <Breadcrumb />
         <div className="container contact-container">
-
+    
             <h2 className='contact-us'>Contact Us</h2>
 
             <div className="contact-alternatives">
@@ -125,19 +129,19 @@ const Contact = () => {
 
                 <div className="social-media">
 
-                    <a className="social-media-icon">
+                    <a href="#" className="social-media-icon">
                         <img src="public\images\contact\facebook-icon.svg" alt="" />
                     </a>
 
-                    <a className="social-media-icon">
+                    <a href="#" className="social-media-icon">
                         <img src="public\images\contact\twitter-icon.svg" alt="" />
                     </a>
 
-                    <a className="social-media-icon">
+                    <a href="#" className="social-media-icon">
                         <img src="public\images\contact\instagram-icon.svg" alt="" />
                     </a>
 
-                    <a className="social-media-icon">
+                    <a href="#" className="social-media-icon">
                         <img src="public\images\contact\youtube-icon.svg" alt="" />
                     </a>
 

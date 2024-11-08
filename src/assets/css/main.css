@@ -1101,6 +1101,7 @@ footer p {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  
   gap: 2rem;
 }
 .contact-us {
@@ -1154,6 +1155,7 @@ footer p {
   border-radius: 0.3rem;
   padding: 2rem;
   box-shadow: 0 0 5px 5px #0000000f;
+  
 
   label {
     display: block;
@@ -1194,6 +1196,7 @@ footer p {
 
   .contact-container{
     display: grid;
+    place-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas:    "contact-us        contact-section-form "
@@ -1276,6 +1279,37 @@ footer p {
     h5 {
       font-size: 24px;
     }
+  }
+}
+
+/* BREADCRUMB */
+
+.breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+.page-title {
+  background-color: var(--clr-gray-100);
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: center;
+}
+@media (width >= 768px) {
+  .page-title {
+    max-width: 720px;
+    padding-block: 2.5rem;
+    padding-inline: 0;
+  }
+}
+@media (width >= 1400px) {
+  .page-title {
+    max-width: 1320px;
+    padding-block: 5rem;
+    justify-content: flex-start;
   }
 }
 

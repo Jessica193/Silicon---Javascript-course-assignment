@@ -4,12 +4,14 @@ import Home from './views/Home'
 import Contact from './views/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Breadcrumb from './components/Breadcrumb'
 
 
 
 
 function App() {
   
+
 
   return (
     <BrowserRouter>
