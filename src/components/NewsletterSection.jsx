@@ -8,7 +8,7 @@ function NewsletterSection() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regexEmail = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
     if(email.trim() === '') {
       alert('You can not leave this field empty') /*Ändra senare*/

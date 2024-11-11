@@ -1159,6 +1159,7 @@ footer p {
   padding: 4rem;
   box-shadow: 0 0 5px 5px #0000000f;
   width: 80%;
+  margin-bottom: 2rem;
   
 
   label {
@@ -1175,16 +1176,15 @@ footer p {
     margin-top: 8rem;
     width: 100%;
     border: transparent;
-    
   }
-}
-.contact-input {
-  width: 100%;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #D4D7E5;
-    border-radius: 0.3rem;
-    margin-bottom: 2rem;
+  .contact-input {
+    width: 100%;
+      font-size: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #D4D7E5;
+      border-radius: 0.3rem;
+      margin-bottom: 2rem;
+  }
 }
 
 @media (width >= 768px){
@@ -1196,7 +1196,6 @@ footer p {
     font-size: 40px;
     margin-bottom: 2rem;
     text-align: left;
-    /* grid-area: contact-us; */
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -1206,10 +1205,6 @@ footer p {
     place-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr 1fr;
-
-    /* grid-template-areas:    "contact-us        contact-section-form "
-                        "contact-alternatives  contact-section-form"; */
-    
   }
 
   .contact-card-content {
@@ -1222,14 +1217,11 @@ footer p {
     height: 100%;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    /* max-height: 100%; */
-    /* grid-area: contact-section-form; */
     h3 {
       font-size: 32px;
     }
   }
   .contact-alternatives {
-    /* grid-area: contact-alternatives; */
     max-width: 60%;
     gap: 4rem;
     grid-column: 1 / 2;
