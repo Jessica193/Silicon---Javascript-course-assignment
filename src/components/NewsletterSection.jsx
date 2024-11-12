@@ -4,6 +4,7 @@ import notification from '../assets/images/notification.svg'
 function NewsletterSection() {
 
   const [email, setEmail] = useState('')
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -18,9 +19,13 @@ function NewsletterSection() {
         alert('You have to enter a valid email-address') /*Ändra senare*/
       }
 
+    
+
       setEmail('')
 
     }
+
+
 
 
 
