@@ -1061,6 +1061,22 @@ footer p {
   font-weight: 600;
   line-height: 25.6px;
 }
+.info-box-subscribe {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 60%;
+  margin: 0 auto;
+
+  button {
+    width: 100%;
+    border: transparent;
+  }  
+}
 
 @media (width >= 768px) {
   .container-newsletter {

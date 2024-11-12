@@ -2,57 +2,14 @@ import React, { useState } from 'react'
 
 const ContactSectionForm = () => {
 
-    const [formData, setformData] = useState({name:'', email:'', specialist: ''})
+    const [formData, setFormData] = useState({name:'', email:'', specialist: ''})
     const [submitted, setSubmitted] = useState(false)
     const [errors, setErrors] = useState({})
     
     const handleChange = (e) => {
         const {name, value} = e.target
-        setformData({...formData, [name]: value})
+        setFormData({...formData, [name]: value})
     
-
-        // const newErrors = { ...errors };
-
-        // if (name === "name") {
-        //     if (value.trim().length < 2) {
-        //         newErrors.name = "Full name is required";
-        //     } else {
-        //         newErrors.name = ""; 
-        //     }
-        // }
-
-        // if (name === "email") {
-        //     const regexEmail = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-        //     if (value.trim() === "") {
-        //         newErrors.email = "Email is required";
-        //     } else if (!regexEmail.test(value)) {
-        //         newErrors.email = "You have to enter a valid email address";
-        //     } else {
-        //         newErrors.email = ""; 
-        //     }
-        // }
-
-        // if (name === "specialist") {
-        //     if (value.trim() === "") {
-        //         newErrors.specialist = "Specialist is required";
-        //     } else {
-        //         newErrors.specialist = ""; 
-        //     }
-        // }
-
-        // setErrors(newErrors);
-    
-
-
-
-
-        // if (value.trim() === '') {
-        //     setErrors(prevErrors => ({...prevErrors, [name] : 
-        //          `The ${name} field is reqired`}))
-        // } else {
-        //     setErrors(prevErrors => ({...prevErrors, [name] : 
-        //         ''}))
-        // }
     }
 
     const handleOK = () => {
@@ -78,7 +35,6 @@ const ContactSectionForm = () => {
         setErrors(newErrors)
 
         if (Object.keys(newErrors).length > 0) {
-            setErrors(newErrors)
             return
         }
         
@@ -97,7 +53,7 @@ const ContactSectionForm = () => {
 
         if (res.ok) {
             setSubmitted(true)
-            setformData({name:'', email:'', specialist: ''})
+            setFormData({name:'', email:'', specialist: ''})
         } 
     }
 
@@ -110,11 +66,6 @@ const ContactSectionForm = () => {
             </div>
         )
     }
-
-
-
-
-   
 
 
 

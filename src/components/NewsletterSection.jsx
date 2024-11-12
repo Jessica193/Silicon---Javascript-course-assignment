@@ -2,10 +2,19 @@ import React, { useState } from 'react'
 import notification from '../assets/images/notification.svg'
 
 function NewsletterSection() {
-
+  
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [errors, setErrors] = useState({})
+  
+  const handleChange = (e) => {
+    const {value} = e.target
+    setEmail(value)
+
+    if (value.trim() !== '') {
+      setErrors(prevErrors => ({...prevErrors, email: ''}))
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -23,7 +32,6 @@ function NewsletterSection() {
       setErrors(newErrors)
 
       if (Object.keys(newErrors).length > 0) {
-        setErrors(newErrors)
         return
     }
   
@@ -36,9 +44,7 @@ function NewsletterSection() {
       body: JSON.stringify({email})
     })
 
-    console.log(res)
-
-
+    
     if (res.ok) {
         setSubmitted(true)
         setEmail('')
@@ -51,20 +57,13 @@ function NewsletterSection() {
 
   if (submitted) {
     return (
-        <div className='info-box'>
-            <h1>Thanks for your request</h1>
-            <p>We will contact you soon</p>
+        <div className='info-box-subscribe'>
+            <h1>Thank you for subscribing</h1>
             <button className='btn-primary' onClick={handleOK}>OK</button>
         </div>
     )
   }
-
-  const handleChange = (e) => {
-    setEmail(e.target.value)
-  }
-
-
-
+  
 
 
   return (
