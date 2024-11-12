@@ -1010,6 +1010,11 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  span {
+    color: red;
+    font-size: small;
+  }
 }
 
 .subscribe {

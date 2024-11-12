@@ -9,15 +9,50 @@ const ContactSectionForm = () => {
     const handleChange = (e) => {
         const {name, value} = e.target
         setformData({...formData, [name]: value})
+    
+
+        // const newErrors = { ...errors };
+
+        // if (name === "name") {
+        //     if (value.trim().length < 2) {
+        //         newErrors.name = "Full name is required";
+        //     } else {
+        //         newErrors.name = ""; 
+        //     }
+        // }
+
+        // if (name === "email") {
+        //     const regexEmail = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+        //     if (value.trim() === "") {
+        //         newErrors.email = "Email is required";
+        //     } else if (!regexEmail.test(value)) {
+        //         newErrors.email = "You have to enter a valid email address";
+        //     } else {
+        //         newErrors.email = ""; 
+        //     }
+        // }
+
+        // if (name === "specialist") {
+        //     if (value.trim() === "") {
+        //         newErrors.specialist = "Specialist is required";
+        //     } else {
+        //         newErrors.specialist = ""; 
+        //     }
+        // }
+
+        // setErrors(newErrors);
+    
 
 
-        if (value.trim() === '') {
-            setErrors(prevErrors => ({...prevErrors, [name] : 
-                 `The ${name} field is reqired`}))
-        } else {
-            setErrors(prevErrors => ({...prevErrors, [name] : 
-                ''}))
-        }
+
+
+        // if (value.trim() === '') {
+        //     setErrors(prevErrors => ({...prevErrors, [name] : 
+        //          `The ${name} field is reqired`}))
+        // } else {
+        //     setErrors(prevErrors => ({...prevErrors, [name] : 
+        //         ''}))
+        // }
     }
 
     const handleOK = () => {
@@ -28,19 +63,24 @@ const ContactSectionForm = () => {
         e.preventDefault()
 
         const newErrors = {}
-        Object.keys(formData).forEach(field => {
-            if (formData[field].trim() === '') {
-                newErrors[field] = `The ${field} field is reqired`
-            }
-        })
+        const regexEmail = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+        if (formData.name.trim().length < 2) {
+            newErrors.name = 'Full name is required'
+        }
+        if (formData.email.trim() === '') {
+            newErrors.email = 'Email is required'
+        } else if (!regexEmail.test(formData.email)) {
+            newErrors.email = 'You have to enter a valid email address'
+        }
+        if (formData.specialist === '') newErrors.specialist = 'Specialist is required'
+
+        setErrors(newErrors)
 
         if (Object.keys(newErrors).length > 0) {
             setErrors(newErrors)
             return
         }
-
-
-
         
         const res = await fetch('https://win24-assignment.azurewebsites.net/api/forms/contact', {
             method: 'POST',
