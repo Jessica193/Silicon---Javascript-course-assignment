@@ -104,7 +104,8 @@ a {
 a:focus {
   outline: none;
   box-shadow: 0 0 10px var(--clr-primary);
-}
+  color: var(--clr-primary);
+} 
 
 a:hover {
   color: var(--clr-primary);
@@ -268,7 +269,9 @@ a:hover {
   aspect-ratio: 1;
   background-color: var(--clr-gray-300);
   border-radius: 50%;
-
+}
+.dark .accordion-item button {
+  color: black;
 }
 .accordion-item .answer {
   color: var(--clr-gray-800);
@@ -320,9 +323,17 @@ a:hover {
   font-size: 14px;
   line-height: 160%;
   font-weight: 600;
+
+  :focus, :hover {
+    color: hsl(221, 91%, 73%);
+  }
 }
 .FAQ-cards .FAQ-card-2 a {
   color: var(--clr-success);
+
+  :focus, :hover {
+    color: hsl(142, 71%, 65%);
+  }
 }
 
 @media (width >= 768px) {
@@ -582,6 +593,7 @@ header {
 }
 .btn-mobile[aria-expanded="true"] ~ .mobile-menu {
   transform: translateX(0);
+  display: flex;
 }
 .mobile-menu {
   list-style: none;
@@ -598,6 +610,12 @@ header {
   right: 0;
 
   transform: translateX(100%);
+  display: none;
+}
+.dark .header-container {
+  .mobile-menu {
+    background-color: #33354D;
+  }
 }
 .mobile-menu-link {
   color: var(--clr-gray-900);
@@ -1260,6 +1278,30 @@ header {
     width: 100%;
     border: transparent;
   }   
+}
+
+.dark .contact-section {
+    background: linear-gradient(to bottom, var(--clr-gray-100) 80%, black 50%);
+  
+  .info-box {
+    color: black;
+  }
+  .contact-section-form {
+    background-color: #E2E5F1;
+    color: black;
+
+    input {
+      background-color: white;
+      color: black;
+    }
+    label {
+      color: black;
+    }
+    select {
+      background-color: #fff;
+      color: black;
+    }
+  }
 }
 
 

@@ -14,8 +14,7 @@ const AccordionItem = ({item}) => {
   return (
     <div onClick={toggleOpen} className={`accordion-item ${IsOpen && 'open'}`}  >
           <div className="question">
-              <p>{item.title}
-              </p>
+              <p>{item.title}</p>
               <button >
               <i className="fa-solid fa-chevron-down"></i>
               </button>
