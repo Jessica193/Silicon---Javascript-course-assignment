@@ -29,8 +29,12 @@ const Header = () => {
                 <img className="silicon-logo-darkmode" src={siliconLogoDark} alt="silicon logotype"/>
             </Link>
 
-            <nav onClick={toggleMenu} id="main-menu"  className="navbar">
-                <a className="nav-link" href="#">Features</a>
+            <nav id="main-menu"  className="navbar">
+                <a className="nav-link" href="#features-section">Features</a>
+            </nav>
+
+            <nav id="main-menu"  className="navbar">
+                <Link className="nav-link" to="/contact">Contact</Link>
             </nav>
 
             <DarkmodeSwitch />

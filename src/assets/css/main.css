@@ -648,7 +648,7 @@ header {
 @media (width >= 1400px) {
   .header-container {
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
+    grid-template-columns: auto auto 1fr auto auto;
   }
   .navbar {
     display: flex;

@@ -19,7 +19,7 @@ const Features = () => {
 
 
   return (
-    <section className="app-features-section section">
+    <section id="features-section" className="app-features-section section">
         <div className="container container-app-features">
 
             <div className="mobile-image-2">

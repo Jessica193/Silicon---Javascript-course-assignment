@@ -1,44 +1,45 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import avatar1 from '../assets/images/avatar-1.svg'
 import quotes from '../assets/images/quotes.svg'
 import fiveStars from '../assets/images/five-stars.svg'
 import fourStars from '../assets/images/four-stars.svg'
 import avatar2 from '../assets/images/avatar-2.svg'
 import FeedbackCard from './FeedbackCard'
+import { FeedbackCardContext } from './contexts/FeedbackCardContext'
 
 
 const FeedbackSection = () => {
 
-const [feedbackCards, setFeedbackCards] = useState([])
+    const {feedbackCards} = useContext(FeedbackCardContext)
 
-const getData = async () => {
 
-    try {
-        const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
-        if(!res.ok) {
-            console.error('data could not be fetched')
-        }
-        const data = await res.json()
 
-        setFeedbackCards(data)
-    } catch (error) {
-        console.error(error.message)
-    }
 
-}
+// const [feedbackCards, setFeedbackCards] = useState([])
 
-useEffect(() => {
+// const getData = async () => {
 
- getData()
+//     try {
+//         const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
+//         if(!res.ok) {
+//             console.error('data could not be fetched')
+//         }
+//         const data = await res.json()
 
-}, [])
+//         setFeedbackCards(data)
+//     } catch (error) {
+//         console.error(error.message)
+//     }
 
-// const renderStars = (rating) => {
-//     return Array.from({ length:rating }, (_, index) => (
-//         <img key={index} src="public\images\feedback\yellow-star.svg" alt="" className='star-icon'/>
-//     ))
 // }
-//     // renderStars-funktionen kommer från Jeanette i vår klass
+
+// useEffect(() => {
+
+//  getData()
+
+// }, [])
+
+
 
 
   return (
