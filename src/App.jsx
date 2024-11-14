@@ -5,6 +5,8 @@ import Contact from './views/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import FeedbackCardProvider from './components/contexts/FeedbackCardContext'
+import AccordionItemProvider from './components/contexts/AccordionItemContext'
+
 
 
 
@@ -16,16 +18,18 @@ function App() {
 
   return (
     <FeedbackCardProvider>
-      <BrowserRouter>
-        <Header />
-        <main>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/contact' element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </BrowserRouter>
+      <AccordionItemProvider>
+        <BrowserRouter>
+          <Header />
+          <main>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/contact' element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+        </BrowserRouter>
+      </AccordionItemProvider>
     </FeedbackCardProvider>
   )
 }

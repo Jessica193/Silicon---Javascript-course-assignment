@@ -22,6 +22,7 @@ const Header = () => {
 
   return (
     <header>
+        <a className='skip-link' href="#hero-section">Skip to main</a>
         <div className="container header-container"> 
 
             <Link id="logo" to="/">

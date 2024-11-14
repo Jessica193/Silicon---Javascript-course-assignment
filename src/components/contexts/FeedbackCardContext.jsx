@@ -5,11 +5,12 @@ export const FeedbackCardContext = createContext()
 const FeedbackCardProvider = ({ children }) => {
 
     const [feedbackCards, setFeedbackCards] = useState([])
+    const baseApiUri = 'https://win24-assignment.azurewebsites.net/api/testimonials/'
 
     const getData = async () => {
 
         try {
-            const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
+            const res = await fetch(baseApiUri)
             if(!res.ok) {
                 console.error('data could not be fetched')
             }

@@ -502,6 +502,21 @@ footer p {
 header {
   position: relative;
 }
+.skip-link {
+  display: inline-block;
+  padding: 1rem;
+  position: absolute;
+  top: 10rem;
+  left: -100vw;
+  background-color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  border: 1px solid #333;
+  transition: 300ms;
+}
+.skip-link:focus {
+  left: 0;
+}
+
 .header-container {
   display: grid;
   grid-template-columns: 1fr auto auto;

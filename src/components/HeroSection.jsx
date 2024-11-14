@@ -8,7 +8,7 @@ import Mobile1 from '../assets/images/mobile-1.svg'
 
 const HeroSection = () => {
   return (
-    <section className="hero-section section">
+    <section id="hero-section"className="hero-section section">
         <div className="container container-hero">
 
             <div className="headliner">
