@@ -1,9 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import avatar1 from '../assets/images/avatar-1.svg'
-import quotes from '../assets/images/quotes.svg'
-import fiveStars from '../assets/images/five-stars.svg'
-import fourStars from '../assets/images/four-stars.svg'
-import avatar2 from '../assets/images/avatar-2.svg'
 import FeedbackCard from './FeedbackCard'
 import { FeedbackCardContext } from './contexts/FeedbackCardContext'
 
@@ -11,35 +6,6 @@ import { FeedbackCardContext } from './contexts/FeedbackCardContext'
 const FeedbackSection = () => {
 
     const {feedbackCards} = useContext(FeedbackCardContext)
-
-
-
-
-// const [feedbackCards, setFeedbackCards] = useState([])
-
-// const getData = async () => {
-
-//     try {
-//         const res = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials')
-//         if(!res.ok) {
-//             console.error('data could not be fetched')
-//         }
-//         const data = await res.json()
-
-//         setFeedbackCards(data)
-//     } catch (error) {
-//         console.error(error.message)
-//     }
-
-// }
-
-// useEffect(() => {
-
-//  getData()
-
-// }, [])
-
-
 
 
   return (

@@ -1,5 +1,4 @@
 import React from 'react'
-import blueArrow from '../assets/images/blue-arrow-up.svg'
 import phone from '../assets/images/phone.svg'
 import arrowRight from '../assets/images/arrow-right.svg'
 import messageBubble from '../assets/images/message-bubble.svg'
